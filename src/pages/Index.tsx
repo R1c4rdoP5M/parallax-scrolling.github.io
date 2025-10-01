@@ -8,10 +8,12 @@ import { useParallax } from '@/hooks/use-parallax';
 // Import images
 import skylineBg from '@/assets/skyline-bg.jpg';
 import cloudsLayer from '@/assets/clouds-layer.jpg';
-import building1 from '@/assets/building-1.png';
-import building2 from '@/assets/building-2.png';
-import crane from '@/assets/crane.png';
+import buildingGlass from '@/assets/building-glass.png';
+import buildingArtdeco from '@/assets/building-artdeco.png';
+import craneClean from '@/assets/crane-clean.png';
 import birds from '@/assets/birds.png';
+import balloon from '@/assets/balloon.png';
+import airplane from '@/assets/airplane.png';
 
 const Index: React.FC = () => {
   const { scrollY } = useParallax();
@@ -53,14 +55,15 @@ const Index: React.FC = () => {
       {/* Far building - Layer 2 */}
       <ParallaxLayer speed={0.2} className="z-3">
         <FloatingElement 
-          className="top-[25vh] right-[10vw] w-[30vw] md:w-[20vw] opacity-70"
+          className="top-[25vh] right-[10vw] w-[28vw] md:w-[18vw] opacity-90"
           animationType="float-slow"
           delay={0}
         >
           <img 
-            src={building2} 
+            src={buildingArtdeco} 
             alt="Art deco building" 
-            className="w-full h-auto drop-shadow-2xl filter brightness-90"
+            className="w-full h-auto drop-shadow-2xl filter contrast-110"
+            style={{ filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))' }}
           />
         </FloatingElement>
       </ParallaxLayer>
@@ -82,14 +85,15 @@ const Index: React.FC = () => {
       {/* Near building - Layer 4 */}
       <ParallaxLayer speed={0.6} className="z-5">
         <FloatingElement 
-          className="top-[100vh] left-[5vw] w-[35vw] md:w-[25vw]"
+          className="top-[100vh] left-[5vw] w-[32vw] md:w-[22vw]"
           animationType="float"
           delay={0.5}
         >
           <img 
-            src={building1} 
+            src={buildingGlass} 
             alt="Modern skyscraper" 
-            className="w-full h-auto shadow-building"
+            className="w-full h-auto"
+            style={{ filter: 'drop-shadow(0 25px 50px rgba(0,0,0,0.4))' }}
           />
         </FloatingElement>
       </ParallaxLayer>
@@ -97,14 +101,47 @@ const Index: React.FC = () => {
       {/* Construction crane - Layer 5 */}
       <ParallaxLayer speed={0.8} className="z-6">
         <FloatingElement 
-          className="top-[160vh] right-[10vw] w-[30vw] md:w-[20vw]"
+          className="top-[160vh] right-[10vw] w-[28vw] md:w-[18vw]"
           animationType="rotate-slow"
           delay={1}
         >
           <img 
-            src={crane} 
+            src={craneClean} 
             alt="Construction crane" 
-            className="w-full h-auto filter drop-shadow-lg"
+            className="w-full h-auto"
+            style={{ filter: 'drop-shadow(0 15px 30px rgba(0,0,0,0.3))' }}
+          />
+        </FloatingElement>
+      </ParallaxLayer>
+
+      {/* Hot air balloon - Layer 3 */}
+      <ParallaxLayer speed={0.35} className="z-4">
+        <FloatingElement 
+          className="top-[200vh] left-[60vw] w-[15vw] md:w-[10vw]"
+          animationType="float-slow"
+          delay={1.5}
+        >
+          <img 
+            src={balloon} 
+            alt="Hot air balloon" 
+            className="w-full h-auto"
+            style={{ filter: 'drop-shadow(0 10px 25px rgba(0,0,0,0.2))' }}
+          />
+        </FloatingElement>
+      </ParallaxLayer>
+
+      {/* Airplane - Layer 5 */}
+      <ParallaxLayer speed={0.9} className="z-6">
+        <FloatingElement 
+          className="top-[280vh] left-[20vw] w-[20vw] md:w-[12vw]"
+          animationType="float"
+          delay={2}
+        >
+          <img 
+            src={airplane} 
+            alt="Small airplane" 
+            className="w-full h-auto"
+            style={{ filter: 'drop-shadow(0 8px 20px rgba(0,0,0,0.25))' }}
           />
         </FloatingElement>
       </ParallaxLayer>
