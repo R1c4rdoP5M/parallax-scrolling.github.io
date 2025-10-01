@@ -33,18 +33,18 @@ export default {
           foreground: "hsl(var(--accent-foreground))",
           glow: "hsl(var(--accent-glow))",
         },
-        cosmic: {
-          DEFAULT: "hsl(var(--cosmic))",
-          light: "hsl(var(--cosmic-light))",
-          dark: "hsl(var(--cosmic-dark))",
+        urban: {
+          DEFAULT: "hsl(var(--urban))",
+          light: "hsl(var(--urban-light))",
+          dark: "hsl(var(--urban-dark))",
         },
-        nebula: {
-          DEFAULT: "hsl(var(--nebula))",
-          light: "hsl(var(--nebula-light))",
+        sky: {
+          DEFAULT: "hsl(var(--sky))",
+          light: "hsl(var(--sky-light))",
         },
-        star: {
-          DEFAULT: "hsl(var(--star))",
-          glow: "hsl(var(--star-glow))",
+        sunset: {
+          DEFAULT: "hsl(var(--sunset))",
+          glow: "hsl(var(--sunset-glow))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -74,15 +74,15 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-cosmic': 'var(--gradient-cosmic)',
-        'gradient-nebula': 'var(--gradient-nebula)',
-        'gradient-star': 'var(--gradient-star)',
+        'gradient-sky': 'var(--gradient-sky)',
+        'gradient-sunset': 'var(--gradient-sunset)',
+        'gradient-glass': 'var(--gradient-glass)',
         'gradient-radial': 'var(--gradient-radial)',
       },
       boxShadow: {
+        'building': 'var(--shadow-building)',
         'glow': 'var(--shadow-glow)',
-        'glow-lg': 'var(--shadow-glow-lg)',
-        'star': 'var(--shadow-star)',
+        'glass': 'var(--shadow-glass)',
       },
       borderRadius: {
         lg: "var(--radius)",

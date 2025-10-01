@@ -72,7 +72,7 @@ export const ContentSection: React.FC<ContentSectionProps> = ({
           {subtitle}
         </span>
       )}
-      <h2 className="text-4xl md:text-6xl font-bold bg-gradient-cosmic bg-clip-text text-transparent">
+      <h2 className="text-4xl md:text-6xl font-bold bg-gradient-sunset bg-clip-text text-transparent">
         {title}
       </h2>
       <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
