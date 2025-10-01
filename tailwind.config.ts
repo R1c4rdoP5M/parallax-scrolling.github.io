@@ -22,22 +22,37 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+          glow: "hsl(var(--accent-glow))",
+        },
+        cosmic: {
+          DEFAULT: "hsl(var(--cosmic))",
+          light: "hsl(var(--cosmic-light))",
+          dark: "hsl(var(--cosmic-dark))",
+        },
+        nebula: {
+          DEFAULT: "hsl(var(--nebula))",
+          light: "hsl(var(--nebula-light))",
+        },
+        star: {
+          DEFAULT: "hsl(var(--star))",
+          glow: "hsl(var(--star-glow))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -57,6 +72,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        'gradient-cosmic': 'var(--gradient-cosmic)',
+        'gradient-nebula': 'var(--gradient-nebula)',
+        'gradient-star': 'var(--gradient-star)',
+        'gradient-radial': 'var(--gradient-radial)',
+      },
+      boxShadow: {
+        'glow': 'var(--shadow-glow)',
+        'glow-lg': 'var(--shadow-glow-lg)',
+        'star': 'var(--shadow-star)',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +106,51 @@ export default {
             height: "0",
           },
         },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        'float-slow': {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-30px)' },
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        pulse: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.5' },
+        },
+        twinkle: {
+          '0%, 100%': { opacity: '0', transform: 'scale(0.5)' },
+          '50%': { opacity: '1', transform: 'scale(1)' },
+        },
+        'fade-in': {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'slide-up': {
+          '0%': { opacity: '0', transform: 'translateY(100px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        glow: {
+          '0%, 100%': { boxShadow: '0 0 20px 5px var(--shadow-color, hsl(var(--accent-glow)))' },
+          '50%': { boxShadow: '0 0 30px 10px var(--shadow-color, hsl(var(--accent-glow)))' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        float: 'float 6s ease-in-out infinite',
+        'float-slow': 'float-slow 8s ease-in-out infinite',
+        rotate: 'rotate 20s linear infinite',
+        'rotate-slow': 'rotate 30s linear infinite',
+        pulse: 'pulse 2s ease-in-out infinite',
+        twinkle: 'twinkle 3s ease-in-out infinite',
+        'fade-in': 'fade-in 0.8s ease-out',
+        'slide-up': 'slide-up 1s ease-out',
+        glow: 'glow 2s ease-in-out infinite',
       },
     },
   },
