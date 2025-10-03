@@ -67,17 +67,19 @@ export const ContentSection: React.FC<ContentSectionProps> = ({
         className
       )}
     >
-      {subtitle && (
-        <span className="text-accent text-sm font-semibold tracking-wider uppercase">
-          {subtitle}
-        </span>
-      )}
-      <h2 className="text-4xl md:text-6xl font-bold bg-gradient-sunset bg-clip-text text-transparent">
-        {title}
-      </h2>
-      <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-        {description}
-      </p>
+      <div className="bg-background/80 backdrop-blur-md rounded-2xl p-8 md:p-12 shadow-2xl border border-white/10">
+        {subtitle && (
+          <span className="text-accent text-sm font-semibold tracking-wider uppercase drop-shadow-lg">
+            {subtitle}
+          </span>
+        )}
+        <h2 className="text-4xl md:text-6xl font-bold text-foreground drop-shadow-2xl" style={{ textShadow: '0 4px 12px rgba(0,0,0,0.5)' }}>
+          {title}
+        </h2>
+        <p className="text-lg md:text-xl text-foreground/90 max-w-2xl drop-shadow-lg">
+          {description}
+        </p>
+      </div>
     </div>
   );
 };
