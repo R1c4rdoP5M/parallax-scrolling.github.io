@@ -63,10 +63,7 @@ const Index: React.FC = () => {
             src={buildingArtdeco} 
             alt="Art deco building" 
             className="w-full h-auto drop-shadow-2xl filter contrast-110"
-            style={{ 
-              filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))',
-              mixBlendMode: 'multiply'
-            }}
+            style={{ filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))' }}
           />
         </FloatingElement>
       </ParallaxLayer>
@@ -96,10 +93,7 @@ const Index: React.FC = () => {
             src={buildingGlass} 
             alt="Modern skyscraper" 
             className="w-full h-auto"
-            style={{ 
-              filter: 'drop-shadow(0 25px 50px rgba(0,0,0,0.4))',
-              mixBlendMode: 'multiply'
-            }}
+            style={{ filter: 'drop-shadow(0 25px 50px rgba(0,0,0,0.4))' }}
           />
         </FloatingElement>
       </ParallaxLayer>
@@ -115,10 +109,7 @@ const Index: React.FC = () => {
             src={craneClean} 
             alt="Construction crane" 
             className="w-full h-auto"
-            style={{ 
-              filter: 'drop-shadow(0 15px 30px rgba(0,0,0,0.3))',
-              mixBlendMode: 'multiply'
-            }}
+            style={{ filter: 'drop-shadow(0 15px 30px rgba(0,0,0,0.3))' }}
           />
         </FloatingElement>
       </ParallaxLayer>
@@ -134,10 +125,7 @@ const Index: React.FC = () => {
             src={balloon} 
             alt="Hot air balloon" 
             className="w-full h-auto"
-            style={{ 
-              filter: 'drop-shadow(0 10px 25px rgba(0,0,0,0.2))',
-              mixBlendMode: 'multiply'
-            }}
+            style={{ filter: 'drop-shadow(0 10px 25px rgba(0,0,0,0.2))' }}
           />
         </FloatingElement>
       </ParallaxLayer>
@@ -153,10 +141,7 @@ const Index: React.FC = () => {
             src={airplane} 
             alt="Small airplane" 
             className="w-full h-auto"
-            style={{ 
-              filter: 'drop-shadow(0 8px 20px rgba(0,0,0,0.25))',
-              mixBlendMode: 'multiply'
-            }}
+            style={{ filter: 'drop-shadow(0 8px 20px rgba(0,0,0,0.25))' }}
           />
         </FloatingElement>
       </ParallaxLayer>
