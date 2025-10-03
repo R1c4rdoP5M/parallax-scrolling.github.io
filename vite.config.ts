@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
-    base: "/parallax-scrolling/",
+    base: "/parallax-scrolling.github.io/",
     host: "::",
     port: 8080,
   },
